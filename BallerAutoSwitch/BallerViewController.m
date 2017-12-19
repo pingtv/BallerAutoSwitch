@@ -38,10 +38,12 @@
 //        NSString *URL1 = @"rtsp://52.87.63.85:1935/vods3/_definst_/amazons3/ballerstaging-assets/right1_720.mp4";
         
 //        NSString *URL = @"rtsp://192.168.0.180:554/11";
-//        NSString *URL1 = @"rtsp://eugene:eugene123@192.168.0.108:554";
+//        NSString *URL = @"rtsp://eugene:eugene123@192.168.0.108:554";
         
-        NSString *URL = @"rtsp://192.168.0.100:554";
-        NSString *URL1 = @"rtsp://192.168.0.104:554";
+//        NSString *URL = @"rtsp://52.87.63.85:1935/live/Amcrest1080.stream";
+        
+        NSString *URL = @"rtsp://192.168.0.100:1935/live/left";
+        NSString *URL1 = @"rtsp://192.168.0.100:1935/live/right";
 
         
         
