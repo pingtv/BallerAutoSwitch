@@ -84,15 +84,15 @@
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" misplaced="YES" id="lH9-VK-0ny">
-                    <rect key="frame" x="831" y="0.0" width="284" height="160"/>
+                    <rect key="frame" x="760" y="0.0" width="355" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="kyh-fE-Rv6">
-                            <rect key="frame" x="0.0" y="0.0" width="284" height="160"/>
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="200"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="blw-uV-7lM">
-                            <rect key="frame" x="0.0" y="80" width="142" height="80"/>
+                            <rect key="frame" x="0.0" y="120" width="142" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         </imageView>
                     </subviews>
