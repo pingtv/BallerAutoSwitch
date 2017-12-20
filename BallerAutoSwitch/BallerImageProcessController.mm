@@ -179,8 +179,8 @@ double accumulationAlpha;
 
         // Count all motion areas
         
-        double maxArea = 1.0/10 * rows * cols;
-        double minArea = 1.0/2000 * rows * cols;
+        double maxArea = 1.0/25 * rows * cols;
+        double minArea = 1.0/10000 * rows * cols;
 //        std::vector<std::vector<cv::Point> > motionAreas;
         for (int i = 0; i < contours.size(); i++) {
             double area = cv::contourArea(contours[i]);
