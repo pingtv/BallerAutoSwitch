@@ -27,7 +27,6 @@
 		105944841FE33621003B8A80 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059447A1FE33621003B8A80 /* libavdevice.a */; };
 		105944851FE33621003B8A80 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059447B1FE33621003B8A80 /* libswresample.a */; };
 		105944861FE33621003B8A80 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059447C1FE33621003B8A80 /* libswscale.a */; };
-		105944881FE3362E003B8A80 /* libnanostreamAVC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105944871FE3362E003B8A80 /* libnanostreamAVC.a */; };
 		1059448A1FE33671003B8A80 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105944891FE33671003B8A80 /* VideoToolbox.framework */; };
 		1059448C1FE33679003B8A80 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059448B1FE33679003B8A80 /* SystemConfiguration.framework */; };
 		1059448E1FE33680003B8A80 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059448D1FE33680003B8A80 /* AudioToolbox.framework */; };
@@ -45,6 +44,7 @@
 		105944A71FE33F98003B8A80 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 105944A61FE33F98003B8A80 /* libbz2.tbd */; };
 		105944AB1FE3401B003B8A80 /* BallerViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105944AA1FE3401B003B8A80 /* BallerViewController_iPad.xib */; };
 		22A100B54F9B6982C63BAACA /* libPods-BallerAutoSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71384CA72DB8E13B436C60 /* libPods-BallerAutoSwitch.a */; };
+		3907ECE51FE94C74006C3F07 /* libnanostreamAVC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3907ECE41FE94C74006C3F07 /* libnanostreamAVC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,7 +177,6 @@
 		1059447A1FE33621003B8A80 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
 		1059447B1FE33621003B8A80 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		1059447C1FE33621003B8A80 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
-		105944871FE3362E003B8A80 /* libnanostreamAVC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnanostreamAVC.a; sourceTree = "<group>"; };
 		105944891FE33671003B8A80 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		1059448B1FE33679003B8A80 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1059448D1FE33680003B8A80 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -195,6 +194,7 @@
 		105944A41FE33F65003B8A80 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		105944A61FE33F98003B8A80 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		105944AA1FE3401B003B8A80 /* BallerViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BallerViewController_iPad.xib; sourceTree = "<group>"; };
+		3907ECE41FE94C74006C3F07 /* libnanostreamAVC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnanostreamAVC.a; sourceTree = "<group>"; };
 		8C71384CA72DB8E13B436C60 /* libPods-BallerAutoSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BallerAutoSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37DE86D881C55DC117CC0CC /* Pods-BallerAutoSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallerAutoSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-BallerAutoSwitch/Pods-BallerAutoSwitch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,10 +216,10 @@
 				105944941FE3369F003B8A80 /* Foundation.framework in Frameworks */,
 				105944921FE33696003B8A80 /* AVFoundation.framework in Frameworks */,
 				105944901FE3368F003B8A80 /* UIKit.framework in Frameworks */,
+				3907ECE51FE94C74006C3F07 /* libnanostreamAVC.a in Frameworks */,
 				1059448E1FE33680003B8A80 /* AudioToolbox.framework in Frameworks */,
 				1059448C1FE33679003B8A80 /* SystemConfiguration.framework in Frameworks */,
 				1059448A1FE33671003B8A80 /* VideoToolbox.framework in Frameworks */,
-				105944881FE3362E003B8A80 /* libnanostreamAVC.a in Frameworks */,
 				105944811FE33621003B8A80 /* libavfilter.a in Frameworks */,
 				105944801FE33621003B8A80 /* libavutil.a in Frameworks */,
 				22A100B54F9B6982C63BAACA /* libPods-BallerAutoSwitch.a in Frameworks */,
@@ -519,7 +519,7 @@
 				1059448D1FE33680003B8A80 /* AudioToolbox.framework */,
 				1059448B1FE33679003B8A80 /* SystemConfiguration.framework */,
 				105944891FE33671003B8A80 /* VideoToolbox.framework */,
-				105944871FE3362E003B8A80 /* libnanostreamAVC.a */,
+				3907ECE41FE94C74006C3F07 /* libnanostreamAVC.a */,
 				8C71384CA72DB8E13B436C60 /* libPods-BallerAutoSwitch.a */,
 			);
 			name = Frameworks;
@@ -809,6 +809,7 @@
 					"$(SRCROOT)/BallerAutoSwitch/FFMpegiOS/include",
 				);
 				INFOPLIST_FILE = BallerAutoSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -840,6 +841,7 @@
 					"$(SRCROOT)/BallerAutoSwitch/FFMpegiOS/include",
 				);
 				INFOPLIST_FILE = BallerAutoSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

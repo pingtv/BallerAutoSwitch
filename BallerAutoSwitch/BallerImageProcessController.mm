@@ -98,9 +98,9 @@ double accumulationAlpha;
         cv::Mat frameDelta1(rows, cols, 0);
         cv::Mat frameDelta2(rows, cols, 0);
         cv::Mat frameDelta(rows, cols, 0);
-        cv::absdiff(_ring[0], _ring[1],frameDelta1);
-        cv::absdiff(_ring[1], gray, frameDelta2);
-        cv::bitwise_or(frameDelta1, frameDelta2, frameDelta);
+//        cv::absdiff(_ring[0], _ring[1],frameDelta1);
+        cv::absdiff(_ring[1], gray, frameDelta);
+//        cv::bitwise_and(frameDelta1, frameDelta2, frameDelta);
         
         
         // Apply threshold
@@ -187,8 +187,8 @@ double accumulationAlpha;
             //only count motion above a certain size (filter some artifacts)
             if (area < maxArea && area > minArea){
 //                motionAreas.push_back(contours[i]);
-//                motionValue += area;
-                motionValue += 1;
+                motionValue += area;
+//                motionValue += 1;
             }
 
         }

@@ -42,8 +42,8 @@
         
 //        NSString *URL = @"rtsp://52.87.63.85:1935/live/Amcrest1080.stream";
         
-        NSString *URL = @"rtsp://192.168.0.100:1935/live/left";
-        NSString *URL1 = @"rtsp://192.168.0.100:1935/live/right";
+        NSString *URL = @"rtsp://192.168.0.105:1935/live/left";
+        NSString *URL1 = @"rtsp://192.168.0.105:1935/live/right";
 
         
         
