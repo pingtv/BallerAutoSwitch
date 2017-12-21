@@ -175,20 +175,37 @@ double accumulationAlpha;
         // Find all contours
         std::vector<std::vector<cv::Point> > contours;
         cv::findContours(thresh, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+        
+        //moments
+        vector<Moments> mu(contours.size() );
+        
+        //  Get the mass centers:
+        vector<Point2f> mc( contours.size() );
 
 
         // Count all motion areas
         
         double maxArea = 1.0/25 * rows * cols;
-        double minArea = 1.0/10000 * rows * cols;
+//        double minArea = 1.0/10000 * rows * cols;
 //        std::vector<std::vector<cv::Point> > motionAreas;
         for (int i = 0; i < contours.size(); i++) {
+
+            
             double area = cv::contourArea(contours[i]);
             //only count motion above a certain size (filter some artifacts)
-            if (area < maxArea && area > minArea){
+            if (area < maxArea){
+                
+                cv::Rect bound = cv::boundingRect(contours[i]);
+                int bottomY = bound.y + bound.height;
+                
+                double normalizingFactor = double(rows - bottomY)/rows;
+                
+                double finalArea = area * pow(normalizingFactor, 1.75);
+                
+                
 //                motionAreas.push_back(contours[i]);
-//                motionValue += area;
-                motionValue += 1;
+                motionValue += finalArea;
+//                motionValue += 1;
             }
 
         }
