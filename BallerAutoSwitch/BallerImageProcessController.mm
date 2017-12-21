@@ -200,7 +200,7 @@ double accumulationAlpha;
                 
                 double normalizingFactor = double(rows - bottomY)/rows;
                 
-                double finalArea = area * pow(normalizingFactor, 1.75);
+                double finalArea = area * pow(normalizingFactor, 1.9);
                 
                 
 //                motionAreas.push_back(contours[i]);
