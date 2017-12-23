@@ -161,9 +161,9 @@ double accumulationAlpha;
         cv::Mat frameDelta1(rows, cols, 0);
         cv::Mat frameDelta2(rows, cols, 0);
         cv::Mat frameDelta(rows, cols, 0);
-//        cv::absdiff(_ring[0], _ring[1],frameDelta1);
-        cv::absdiff(_ring[1], gray, frameDelta);
-//        cv::bitwise_or(frameDelta1, frameDelta2, frameDelta);
+        cv::absdiff(_ring[0], _ring[1],frameDelta1);
+        cv::absdiff(_ring[1], gray, frameDelta2);
+        cv::bitwise_or(frameDelta1, frameDelta2, frameDelta);
         
         
         // Apply threshold
@@ -175,12 +175,6 @@ double accumulationAlpha;
         // Find all contours
         std::vector<std::vector<cv::Point> > contours;
         cv::findContours(thresh, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
-        
-        //moments
-        vector<Moments> mu(contours.size() );
-        
-        //  Get the mass centers:
-        vector<Point2f> mc( contours.size() );
 
 
         // Count all motion areas

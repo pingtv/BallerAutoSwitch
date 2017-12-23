@@ -42,8 +42,8 @@
         
 //        NSString *URL = @"rtsp://52.87.63.85:1935/live/Amcrest1080.stream";
         
-        NSString *URL = @"rtsp://192.168.0.105:1935/live/left";
-        NSString *URL1 = @"rtsp://192.168.0.105:1935/live/right";
+        NSString *URL = @"rtsp://192.168.0.101:1935/live/left";
+        NSString *URL1 = @"rtsp://192.168.0.101:1935/live/right";
 
         
         
@@ -119,8 +119,8 @@
 {
     [super viewDidLoad];
     
-    [_imageViewLeft setContentMode:UIViewContentModeScaleAspectFill];
-    [_imageViewRight setContentMode:UIViewContentModeScaleAspectFill];
+    [_imageViewLeft setContentMode:UIViewContentModeScaleAspectFit];
+    [_imageViewRight setContentMode:UIViewContentModeScaleAspectFit];
     
     [_imageViewSmall setContentMode:UIViewContentModeScaleAspectFill];
     [_imageViewBig setContentMode:UIViewContentModeScaleAspectFill];
@@ -368,7 +368,7 @@
             if (self.leftVideoMotionIntensity > self.rightVideoMotionIntensity) {
                 
                 self.chooseLeftState++;
-                if (self.chooseLeftState > FRAMES/4) {
+                if (self.chooseLeftState > FRAMES/3) {
                     _selected = 1;
                     self.chooseRightState = 0;
                     self.chooseLeftState = 0;
@@ -377,7 +377,7 @@
             } else if (self.rightVideoMotionIntensity > self.leftVideoMotionIntensity) {
                 
                 self.chooseRightState++;
-                if (self.chooseRightState > FRAMES/4) {
+                if (self.chooseRightState > FRAMES/3) {
                     _selected = 2;
                     self.chooseLeftState = 0;
                     self.chooseRightState = 0;
