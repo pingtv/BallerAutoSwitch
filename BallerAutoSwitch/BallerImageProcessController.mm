@@ -150,6 +150,9 @@ double accumulationAlpha;
     CGFloat cols = image.cols;
     CGFloat rows = image.rows;
     
+//    cv::HOGDescriptor hog;
+//    hog setSVMDe
+    
     // convert to grayscale and blur
     cv::Mat gray(rows, cols, CV_32FC1);
     cv::cvtColor(image, gray, CV_BGRA2GRAY);
