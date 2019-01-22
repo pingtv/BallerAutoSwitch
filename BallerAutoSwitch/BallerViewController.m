@@ -42,9 +42,11 @@
         
 //        NSString *URL = @"rtsp://52.87.63.85:1935/live/Amcrest1080.stream";
         
-        NSString *URL = @"rtsp://192.168.0.101:1935/live/left";
-        NSString *URL1 = @"rtsp://192.168.0.101:1935/live/right";
-
+//        NSString *URL = @"rtsp://192.168.0.101:1935/live/left";
+//        NSString *URL1 = @"rtsp://192.168.0.101:1935/live/right";
+        
+        NSString *URL = @"rtsp://admin:Baller*269@192.168.0.10:554/11";
+        NSString *URL1 = @"rtsp://admin:Baller*269@192.168.0.51";
         
         
         self.leftVideoController = [[BallerImageProcessController alloc] init];

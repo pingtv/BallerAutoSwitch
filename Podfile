@@ -8,6 +8,6 @@ target 'BallerAutoSwitch' do
   # Pods for BallerAutoSwitch
 
 pod 'OpenCV'
-
+pod 'MobileVLCKit'
 
 end

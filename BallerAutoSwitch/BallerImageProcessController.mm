@@ -220,7 +220,8 @@ double accumulationAlpha;
         temp.release();
     }
 
-    image.release();
+    image.release();   
+    
     
     return motionValue;
 
